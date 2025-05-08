@@ -27,14 +27,6 @@ a:hover { text-decoration: wavy underline var(--lt-blue) 1px;}
 
 a:focus { outline: 2px dotted var(--dk-purple); }
 
-
-@font-face {
-    font-family: "emily";
-    src: url("fonts/EmilysCandy-Regular.ttf") format('TrueType');
-    font-style: normal;
-    font-weight: normal;
-  }
-
 @font-face {
     font-family: "death";
     src: url("fonts/GrindAndDeath_Demo.ttf") format('TrueType');
@@ -159,7 +151,8 @@ footer {
     font-weight: 600;
 }
 
-.header-text > h1:not(:first-child) em {
+.header-text > h1:nth-child(2) em,
+.header-text > h1:nth-child(3) em > i {
     text-decoration: var(--lt-blue) wavy underline 1px;
 }
 
@@ -173,6 +166,7 @@ footer {
 
 .form-container {
     width: 550px;
+    padding-bottom: 20px;
 }
 
 .form-container h1 {
@@ -192,6 +186,7 @@ form {
 
 label {
     display: block;
+    width: 60%;
     font-size: .75rem;
     margin-bottom: 2px;
     text-transform: uppercase;
@@ -219,6 +214,21 @@ input:focus {
 
 input::placeholder {
     color: var(--med-blue);
+    font-style: italic;
+}
+
+input + span {
+    position: relative;
+}
+
+input:required + span::after {
+    font-size: 0.7rem;
+    position: absolute;
+    content: "(required)";
+    color: var(--med-blue);
+    padding: 5px 10px;
+    top: -26px;
+    left: -60px;
     font-style: italic;
 }
 
