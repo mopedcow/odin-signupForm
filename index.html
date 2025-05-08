@@ -12,32 +12,37 @@
             <img src="images/odin-lined.png"><span class="logo">ODIN</span>
         </div>
         <div class="credits-container">
-            <span>Photo by <a href="">NASA</a> on <a href="">Unsplash</a></span>
+            <span>Photo by <a href="https://unsplash.com/@hubblespacetelescope?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">NASA Hubble Space Telescope</a> on <a href="https://unsplash.com/photos/a-blue-and-white-object-in-the-middle-of-a-black-background-vO9I5nAis0M?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></span>
         </div>
     </div>
 
     <div class="content-container">
         <header>
             <div class="header-text">
-                <h1>This is a real online service! This is something your really need in your life. Waste no time: Sign-up Now!</h1>
-                <h1><em>What are you waiting for?</em></h1>
+                <h1>This is a real online service! It's something you really need in your life, and all of your friends and family have already joined us. They're here, waiting for you!</h1>
+                <h1><em>Ask yourself: Do I want to be alone forever?</em></h1>
             </div>
         </header>
         <content>
-            <h1>Let's go!!!!!</h1>
             <div class="form-container">
-                <form action="#" method="get">
+                <h1>Join up today!</h1>
+                <form id="signup-form" action="#" method="get">
                     <div class="form-box">
                         <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name" required />
+                        <input type="text" id="first-name" name="first-name"/>
                     </div>
                     <div class="form-box">
                         <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name" required />
+                        <input type="text" id="last-name" name="last-name"/>
                     </div>
                     <div class="form-box">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required />
+                        <input type="text"
+                                id="email"
+                                name="email"
+                                placeholder="your.name@example.co.uk"
+                                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-z]{2,}$"
+                                required />
                     </div>
                     <div class="form-box">
                         <label for="phone-num">Phone Number</label>
@@ -45,20 +50,22 @@
                     </div>
                     <div class="form-box">
                         <label for="pwd">Password</label>
-                        <input type="password" id="pwd" name="password" required />
+                        <input type="password" id="pwd" name="password" />
                     </div>
                     <div class="form-box">
                         <label for="conf-pwd">Confirm Password</label>
-                    <input type="password" id="conf-pwd" name="confirm-password" required/>
+                    <input type="password" id="conf-pwd" name="confirm-password"/>
                     </div>
                 </form>
             </div>
         </content>
         <footer>
-            <form>
-                <button type="submit">Create Account</button>
-            </form>
-            <p>Already have an account? <a href="#">Log in</a></p>
+            <div class="footer-text">
+                <form>
+                    <button type="submit" form="signup-form">Create Account</button>
+                </form>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
         </footer>
     </div>
 </body>
