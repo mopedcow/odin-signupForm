@@ -19,7 +19,8 @@
     <div class="content-container">
         <header>
             <div class="header-text">
-                <h1>This is a real online service! It's something you really need in your life, and all of your friends and family have already joined us. They're here, waiting for you!</h1>
+                <h1>This is a <em>real</em> online service!</h1>
+                <h1>It's something you <em>really need</em> in your life, and all of your friends and family have already joined us. They're here, waiting for you!</h1>
                 <h1><em>Ask yourself: Do I want to be alone forever?</em></h1>
             </div>
         </header>
@@ -29,18 +30,18 @@
                 <form id="signup-form" action="#" method="get">
                     <div class="form-box">
                         <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name"/>
+                        <input type="text" id="first-name" name="first-name" required/>
                     </div>
                     <div class="form-box">
                         <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name"/>
+                        <input type="text" id="last-name" name="last-name" required/>
                     </div>
                     <div class="form-box">
                         <label for="email">Email</label>
                         <input type="text"
                                 id="email"
                                 name="email"
-                                placeholder="your.name@example.co.uk"
+                                placeholder="your_name@example.co.uk"
                                 pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-z]{2,}$"
                                 required />
                     </div>
@@ -50,11 +51,11 @@
                     </div>
                     <div class="form-box">
                         <label for="pwd">Password</label>
-                        <input type="password" id="pwd" name="password" />
+                        <input type="password" id="pwd" name="password" required/>
                     </div>
                     <div class="form-box">
                         <label for="conf-pwd">Confirm Password</label>
-                    <input type="password" id="conf-pwd" name="confirm-password"/>
+                    <input type="password" id="conf-pwd" name="confirm-password" required/>
                     </div>
                 </form>
             </div>
